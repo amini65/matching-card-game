@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>matching card game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script src='js/jquery.min.js'></script>
+</head>
+
+<body>
+
+    <div id="box-game">
+        <div id="board">
+            <div class="board-heder">
+            </div>
+            <div id="board-main">
+                <div id="boxLoading" style="display:none">
+                    <img src="images/loding.gif" id="loading" />
+                </div>
+
+                <div id="game-box">
+                    <div id="price">
+                    </div>
+                    <div id="errorAmount">
+                        <div class="errorAmount">
+                            موجودی شما کمتر مقدار شرط بندی است
+                        </div>
+                    </div>
+                    <div id='game'>
+
+                        <div id="result-bet">
+                            <div class="result-number result-one">
+                                <div class="card-result opacity" data-row="0">
+                                    <img src="images/pip.png" class="img-result">
+                                    <p> &nbsp;</p>
+                                </div>
+                                <div class="card-result opacity" data-row="1">
+                                    <img src="images/pip.png" class="img-result">
+                                    <p>0.4x</p>
+
+                                </div>
+                                <div class="card-result opacity" data-row="2">
+                                    <img src="images/pip.png" class="img-result">
+                                    <p>1.1x</p>
+
+                                </div>
+                            </div>
+                            <div class="result-number result-three">
+                                <div class="card-result opacity" data-row="0">
+                                    <img src="images/hat.png" class="img-result">
+                                    <p> &nbsp;</p>
+                                </div>
+                                <div class="card-result opacity" data-row="1">
+                                    <img src="images/hat.png" class="img-result">
+                                    <p>1.6x</p>
+                                </div>
+                                <div class="card-result opacity" data-row="2">
+                                    <img src="images/hat.png" class="img-result">
+                                    <p>3.2x</p>
+                                </div>
+                            </div>
+
+                            <div class="result-number result-seven">
+                                <div class="card-result opacity" data-row="0">
+                                    <img src="images/game-nalai.png" class="img-result">
+                                    <p> &nbsp;</p>
+                                </div>
+                                <div class="card-result opacity" data-row="1">
+                                    <img src="images/game-nalai.png" class="img-result">
+                                    <p>2.7x</p>
+                                </div>
+                                <div class="card-result opacity" data-row="2">
+                                    <img src="images/game-nalai.png" class="img-result">
+                                    <p>5.1x</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card-board">
+                            <div class="card hidden" data-row="0">
+                                <div class="front-face card-seven"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="1">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="2">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="3">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="4">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="5">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="6">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="7">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="8">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="9">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="10">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                            <div class="card hidden" data-row="11">
+                                <div class="front-face"></div>
+                                <div class="back-face"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div id="option-game">
+                    <div id="controls">
+                        <div id="bet-start" class="order1">
+                            <button id="str-green" class="btn greenbox">
+                                <span lang="bet">Start</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="winModal" class="modal">
+        <div class="modal-content" style="width: 20%;text-align: center;border-radius: 20px">
+            <div class="modal-header" style="text-align: center;border-radius: 20px">
+                <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+                <h4 id="winPrice">0</h4>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/game.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
